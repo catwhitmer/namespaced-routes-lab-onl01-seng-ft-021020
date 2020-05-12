@@ -1,0 +1,5 @@
+<% @preferences.each do |preference| %>
+  <%= link_to preference.id, admin_preference_path(preference) %>
+<% end %>
+
+<%= link_to "Add New Preference", new_admin_preference_path %>
